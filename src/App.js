@@ -1,10 +1,11 @@
+import Buttons from "./components/Buttons";
 
 
 
 function App() {
   return (
     <div >
-      you're here
+      <Buttons/>y
      </div>
   );
 }
