@@ -1,0 +1,144 @@
+/* nav bar */
+.signup{
+    background-color: #9664f842;
+    color: hsl(260, 91%, 57%);
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+  .login{
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 1px black;
+  }
+  .login:hover{
+    background-color: rgba(128, 128, 128, 0.37);
+  }
+  
+  
+  
+  
+  
+  
+  /* upcoming events */
+  .search{
+    margin-top: 10px;
+    background-color: #894eff;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    padding: 17px 20px;
+    border-radius: 8px;
+  }
+  .lme{
+    margin-top: 10px;
+    background-color: #9664f842;
+    color: #6f2df5;
+    outline: none;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+  }
+  
+  
+  
+  
+  
+  /* calender */
+  .Event-calender{
+    /* display: flex; */
+    align-items: center;
+    margin-top: 10px;
+    background-color: #894eff;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    padding: 17px 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+  }
+  .Book-now{
+    margin-top: 10px;
+    background-color: #8045f5fd;
+    color: #fafafa;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    height: fit-content;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .Promoter{
+    margin-top: 10px;
+    background-color: #9995a171;
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    height: fit-content;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .bkr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* tags under movie description */
+  .tags{
+    margin-top: 40px;
+    padding: 0px 20px 0px 20px;
+  }
+  .sub-tags{
+    margin-top: 10px;
+    background-color: #9995a171;
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    height: fit-content;
+    border-radius: 10px;
+    width: fit-content;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* //signup page// */
+  .signuppage{
+    margin-top: 40px;
+  }
+  .signin{
+    background-color: #8045f5fd;
+    color: #fcfaff;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+  .signupp{
+    background-color: #afafaf8a;
+    color: #fcfaff;
+    outline: none;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
