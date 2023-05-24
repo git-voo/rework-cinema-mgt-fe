@@ -122,6 +122,7 @@ export default function Table() {
                                 <td>
                                     <h6 class="mb-0">06:00 PM</h6>
                                     <small>2 Feb 2021</small>
+                                    
                                 </td>
                                 <td>
                                     <h6 class="mb-0">+91 9876543215</h6>
