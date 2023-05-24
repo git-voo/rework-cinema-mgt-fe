@@ -1,10 +1,12 @@
+import Footer from "./components/Footer";
 
 
 
 function App() {
   return (
     <div >
-      you're here
+      <Footer/>
+      
      </div>
   );
 }
