@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from "./components/Table";
 
@@ -7,7 +8,8 @@ import Table from "./components/Table";
 function App() {
   return (
     <div >
-      you're here
+      <Footer/>
+      
       <Table/>
      </div>
   );
