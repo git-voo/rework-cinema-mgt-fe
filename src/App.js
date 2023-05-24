@@ -1,11 +1,12 @@
+import CinemaCard from "./utils/CinemaCards";
 
 
 
 function App() {
   return (
     <div >
-      you're here
-     </div>
+      <CinemaCard/>
+    </div>
   );
 }
 
