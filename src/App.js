@@ -4,6 +4,7 @@ import Table from "./components/Table";
 
 import Buttons from "./components/Buttons";
 import Sidebar from "./components/Sidebar";
+import CinemaCard from "./utils/CinemaCards";
 
 
 
@@ -13,8 +14,9 @@ function App() {
       <Buttons/>
       <Sidebar/>
       <Footer/>
-      <Table/>
-     </div>
+      <Table/> 
+      <CinemaCard/>
+    </div>
   );
 }
 
