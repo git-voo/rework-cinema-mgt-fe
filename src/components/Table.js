@@ -1,7 +1,7 @@
 
 import React from 'react'
 import "../styles/table/table.css"
-// import {img1} from "../assets/images/logo.jpeg"
+import img1 from "../assets/images/logo.jpeg"
 
 
 
@@ -9,8 +9,8 @@ export default function Table() {
     return (
         <div>Table
 
-            <div class="main-content">
-                <div class="container">
+            <div class="main-table-content">
+                <div class="table-container">
                     <h1>Cinema Table UI</h1>
                     <br />
                    
@@ -30,7 +30,7 @@ export default function Table() {
                                 <td>
                                     <div class="user-info">
                                         <div class="user-info__img">
-                                            <img src="" alt="User Img" />
+                                            <img src={img1} alt="User Img" />
                                         </div>
                                         <div class="user-info__basic">
                                             <h5 class="mb-0">Tony Brian</h5>
@@ -69,7 +69,7 @@ export default function Table() {
                                 <td>
                                     <div class="user-info">
                                         <div class="user-info__img">
-                                            <img src="img/user1.jpg" alt="User Img" />
+                                            <img src={img1} alt="User Img" />
                                         </div>
                                         <div class="user-info__basic">
                                             <h5 class="mb-0">Agent Kings</h5>
@@ -108,7 +108,7 @@ export default function Table() {
                                 <td>
                                     <div class="user-info">
                                         <div class="user-info__img">
-                                            <img src="img/user1.jpg" alt="User Img" />
+                                            <img src={img1} alt="User Img" />
                                         </div>
                                         <div class="user-info__basic">
                                             <h5 class="mb-0">Jim Kennedy</h5>
@@ -122,7 +122,7 @@ export default function Table() {
                                 <td>
                                     <h6 class="mb-0">06:00 PM</h6>
                                     <small>2 Feb 2021</small>
-                                    
+
                                 </td>
                                 <td>
                                     <h6 class="mb-0">+91 9876543215</h6>

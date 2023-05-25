@@ -13,7 +13,6 @@ function App() {
       <Buttons/>
       <Sidebar/>
       <Footer/>
-      
       <Table/>
      </div>
   );
