@@ -11,6 +11,7 @@ import Buttons from "./components/Buttons";
 import Sidebar from "./components/Sidebar";
 import CinemaCard from "./utils/CinemaCards";
 import MovieDetails from "./pages/MovieDetails";
+import PageNav from "./components/PageNav";
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Buttons/>
       <Sidebar/>
       <Footer/>
+      <PageNav/>
       <Table/> 
       <CinemaCard/>
       <MovieDetails/>

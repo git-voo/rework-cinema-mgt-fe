@@ -54,13 +54,13 @@ export default function Table() {
                                 </td>
                                 <td>
                                     <div class="dropdown open">
-                                        <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                        <div href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <i class="fa fa-ellipsis-v"></i>
-                                        </a>
+                                        </div>
                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
-                                            <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                            <button class="dropdown-item" ><i class="fa fa-pencil mr-1"></i> Edit</button>
+                                            <button class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Delete</button>
                                         </div>
                                     </div>
                                 </td>
@@ -86,20 +86,20 @@ export default function Table() {
                                 </td>
                                 <td>
                                     <h6 class="mb-0">+91 9876543215</h6>
-                                    <a href="#!"><small>Contact</small></a>
+                                    <div ><small>Contact</small></div>
                                 </td>
                                 <td>
                                     <h6 class="mb-0">Dr. Serah</h6>
                                 </td>
                                 <td>
                                     <div class="dropdown open">
-                                        <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                        <a  class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <i class="fa fa-ellipsis-v"></i>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
-                                            <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                            <button class="dropdown-item" ><i class="fa fa-pencil mr-1"></i> Edit</button>
+                                            <button class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Delete</button>
                                         </div>
                                     </div>
                                 </td>
@@ -126,20 +126,20 @@ export default function Table() {
                                 </td>
                                 <td>
                                     <h6 class="mb-0">+91 9876543215</h6>
-                                    <a href="#!"><small>Contact</small></a>
+                                    <button ><small>Contact</small></button>
                                 </td>
                                 <td>
                                     <h6 class="mb-0">Dr. Anthony</h6>
                                 </td>
                                 <td>
                                     <div class="dropdown open">
-                                        <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                        <button  class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <i class="fa fa-ellipsis-v"></i>
-                                        </a>
+                                        </button>
                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
-                                            <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                            <button class="dropdown-item" ><i class="fa fa-pencil mr-1"></i> Edit</button>
+                                            <button class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Delete</button>
                                         </div>
                                     </div>
                                 </td>

@@ -1,15 +1,11 @@
 import React from 'react'
-import { IoLocationSharp } from "react-icons/io"
+// import { IoLocationSharp } from "react-icons/io"
 import mov_img from "../assets/images/event-details.jpg"
+import PageNav from '../components/PageNav'
 export default function MovieDetails() {
     return (
         <div>MovieDetails
-            ascdwvfbrgnth
-            myjuynbthgrvfgbthnyjmu
-            bvrecfvrgbhnyjumybthvrgfcedf
-            gvrtbhytvrgcefdfvrgbthnjyhbtrgv
-
-
+            <PageNav/>
             <div classNameNameName="my_movie">
                 <div classNameName="main">
                     <div classNameName="eventdetail-page">

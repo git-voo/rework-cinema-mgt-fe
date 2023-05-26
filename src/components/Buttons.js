@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/buttons/buttons.css"
-import { BsSearch, BsCalendar4Event } from "react-icons/bs";
+import { BsSearch} from "react-icons/bs";
 // import {BiCalendar} from 'react-icons/bi'
 
 const Buttons = () => {
