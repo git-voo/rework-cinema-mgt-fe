@@ -5,6 +5,7 @@
 .main_search {
     width: 100%;
     margin: auto;
+    margin-top: 7px;
 }
 
 /* Bootstrap 3 text input with search icon */
@@ -27,6 +28,12 @@
     align-items: center;
     justify-content: center;
 }
+.pnc_search {
+    width: 100%;
+    /* margin-top: 5px; */
+    margin: auto;
+    background-color: #a5def0;
+}
 
 /* .form-control {
     padding-right: 12px;
@@ -38,6 +45,7 @@
     background-color: #a5def0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    height: 9vh;
 }
 .pnc_content {
     background-color: #a5def0;
@@ -58,17 +66,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #a5def0;;
+    background-color: #a5def0;
 }
 
 .dots_chev {
-    width: 10%;
+    /* width: 10%; */
     margin: auto;
 }
 
 .dots {
     font-size: 30px;
     cursor: pointer;
+    margin-top: 0.5px;
 }
 
 .chevron {
@@ -82,11 +91,7 @@
     cursor: pointer;
 }
 
-.pnc_search {
-    width: 100%;
-    margin: auto;
-    background-color: #a5def0;;
-}
+
 
 .Input_alas {
     padding-right: 10px;
@@ -112,3 +117,44 @@
     border-radius: 7px;
     margin: 2px;
 }
+
+
+ @media screen and (max-width: 1023px) {
+    .pnc_search{
+        width: 100%;
+        margin: auto;
+        background-color: #a5def0;
+    }
+    .chevron{
+        display: none;
+    }
+    .wash_plus{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pnc_search{
+        width: 100%;
+        margin: auto;
+        background-color: #a5def0;
+    }
+    .chevron{
+        display: none;
+        background-color: #a5def0;
+    }
+    .wash_plus{
+        display: none;
+        background-color: #a5def0;
+    }
+    .dots{
+        display: none;
+        background-color: #a5def0;
+    }
+    .page_navigation_container{
+        background-color: #a5def0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+ 
