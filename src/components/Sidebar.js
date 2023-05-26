@@ -16,48 +16,48 @@ const Sidebar = () => {
         <div>
             <div className="contain">
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <BiMovie />
                         Movies
                     </li>
                 </ul>
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <MdEventSeat />
                         Events
                     </li>
                 </ul>
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <MdOutlineManageAccounts/>
                         Account
                     </li>
                 </ul>
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <HiTicket/>
                         Event Tickets
                     </li>
                 </ul>
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <GiTicket/>
                         Booking
                     </li>
                 </ul>
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <SiCinema4D/>
                         Cinema
                     </li>
@@ -65,9 +65,9 @@ const Sidebar = () => {
 
 
 
-                <ul>
+                <ul className="sideBar-container"> 
 
-                    <li>
+                    <li className="sideBar-links">
                         <GiFlatPlatform/>
                         Concerts
                     </li>
@@ -75,16 +75,16 @@ const Sidebar = () => {
 
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <AiOutlineSetting/>
                         Settings
                     </li>
                 </ul>
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <AiOutlineInfoCircle/>
                         About
                     </li>
@@ -93,8 +93,8 @@ const Sidebar = () => {
 
 
 
-                <ul>
-                    <li>
+                <ul className="sideBar-container">
+                    <li className="sideBar-links">
                         <AiOutlineCustomerService/>
                         Contact
                     </li>
