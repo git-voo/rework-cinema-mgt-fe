@@ -28,10 +28,16 @@ align-items: center;
 justify-content: space-between;
 width: 90%;
 margin: auto;
-}; */
+};
 
-/* .Loggers{
+.Loggers{
     color: yellow;
     display: flex;
 } */
+
+.main_movie{
+    width: 90%;
+    margin: auto;
+    
+}
 
