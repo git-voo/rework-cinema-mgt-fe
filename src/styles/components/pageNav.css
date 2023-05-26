@@ -1,7 +1,4 @@
-/* * {
-    padding: 0, ;
-    margin: 0;
-} */
+
 
 /* Styles for wrapping the search box */
 
@@ -38,12 +35,12 @@
 } */
 
 .page_navigation_container{
-    background-color:  #bbdde7;
+    background-color: #a5def0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .pnc_content {
-    background-color:  #bbdde7;
+    background-color: #a5def0;
     display: flex;
     align-items: center;
     height: 7vh;
@@ -61,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:  #bbdde7;
+    background-color: #a5def0;;
 }
 
 .dots_chev {
@@ -88,7 +85,7 @@
 .pnc_search {
     width: 100%;
     margin: auto;
-    background-color: #bbdde7;
+    background-color: #a5def0;;
 }
 
 .Input_alas {
@@ -112,6 +109,6 @@
 }
 .chev_left, .chev_right, .wash, .plus{
     background-color: white;
-    border-radius: 6px;
+    border-radius: 7px;
     margin: 2px;
 }

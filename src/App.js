@@ -10,8 +10,8 @@ import Table from "./components/Table";
 import Buttons from "./components/Buttons";
 import Sidebar from "./components/Sidebar";
 import CinemaCard from "./utils/CinemaCards";
-import MovieDetails from "./pages/MovieDetails";
 import PageNav from "./components/PageNav";
+import MovieDetailsPage from "./pages/MovieDetailsPage";
 
 
 
@@ -24,7 +24,7 @@ function App() {
       <PageNav/>
       <Table/> 
       <CinemaCard/>
-      <MovieDetails/>
+      <MovieDetailsPage/>
     </div>
   );
 }

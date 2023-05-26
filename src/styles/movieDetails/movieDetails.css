@@ -1,4 +1,5 @@
-@media screen and (max-width: 1023px) {
+
+/* @media screen and (max-width: 1023px) {
     .eventdetail-banner {
         overflow: hidden;
     }
@@ -19,73 +20,18 @@
     .eventdetail-banner img {
         width: auto !important;
     }
-}
+} */
 
-.eventdetail-banner img {
-    opacity: .5;
-    height: 600px;
-    object-fit: cover;
-}
+/* .movie_nav_2{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 90%;
+margin: auto;
+}; */
 
-.align-items-center {
-    -webkit-align-items: center !important;
-    align-items: center !important;
-}
+/* .Loggers{
+    color: yellow;
+    display: flex;
+} */
 
-@media screen and (max-width: 1023px) {
-    .eventdetail-banner {
-        overflow: hidden;
-    }
-}
-
-.eventdetail-banner {
-    display: block;
-    position: relative;
-    background: #000;
-}
-
-@media screen and (max-width: 767px) {
-    .eventdetail-page .eventdetail-section {
-        padding: 50px 0;
-    }
-}
-
-
-.eventdetail-page .eventdetail-section {
-    background: #fff;
-    padding: 120px 0;
-}
-
-@media screen and (max-width: 767px) {
-    .eventdetail-banner .content {
-        padding: 30px px 0;
-        position: relative;
-    }
-}
-
-
-.eventdetail-banner .content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-}
-
-.eventdetail-page .upcoming-bg {
-    background: #f8f8fa;
-    padding: 50px 0;
-    margin: 0;
-}
-@media screen and (max-width: 1023px){
-    .upcoming-bg {
-        margin: 50px 0;
-    }
-}
-
-.upcoming-bg {
-    display: block;
-    margin: 60px 0 80px;
-    position: relative;
-}

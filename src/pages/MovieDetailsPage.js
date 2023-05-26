@@ -1,22 +1,54 @@
 import React from 'react'
-// import { IoLocationSharp } from "react-icons/io"
+import "../styles/movieDetails/movieDetails.css"
+import { MdLocationPin } from "react-icons/md"
 import mov_img from "../assets/images/event-details.jpg"
 import PageNav from '../components/PageNav'
-export default function MovieDetails() {
+export default function MovieDetailsPage() {
     return (
-        <div>MovieDetails
-            <PageNav/>
+        <div>MovieDetailsPage
+            <PageNav />
             <div classNameNameName="my_movie">
-                <div classNameName="main">
+                <div classNameName="main_movie">
+                    {/* <div className="movie_nav_2">
+                        <div><h1>Event bux</h1></div>
+                        <div className='Loggers'>
+                            <div className="movie_login"><h1>Login</h1></div>
+                            <div className="movie_signin"> <h1>Sign up</h1> </div>
+                        </div>
+                    </div> */}
+                    
                     <div classNameName="eventdetail-page">
 
 
                         <section>
                             <div className="mov_banner">
-                                <div className="back_btn"></div>
+                                <div className="banner_back">
+                                    <div className="back_icon"></div>
+                                    <div className="back_text">Back</div>
+                                </div>
+                                <div className="banner_text">
+                                    <h1>Watch The World in</h1>
+                                    <h1>Cinema</h1>
+                                    <p>By Rework Academy</p>
+                                    <p><h2><MdLocationPin className='movie_location_icon' /> View Map</h2></p>
+                                </div>
+
                             </div>
                         </section>
-                        {/* <section classNameName="eventdetail-banner">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <section classNameName="eventdetail-banner">
                             <img alt="img"
                                 src={mov_img}
                                 classNameName="w-100 " />
@@ -49,7 +81,7 @@ export default function MovieDetails() {
                                             <p></p>
                                             <div className="sc-gzOgki krDvKm">
                                                 <p className="viewmap-btn nav-link">
-                                                    <IoIosPin />
+
                                                     <path fill="currentColor"
                                                         d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
                                                     </path>View
@@ -70,7 +102,7 @@ export default function MovieDetails() {
                                                         className="react-add-to-calendar">
                                                         <div
                                                             className="react-add-to-calendar__wrapper">
-                                                           
+
                                                             <p className="react-add-to-calendar__button">
                                                                 <span>
                                                                     <i
@@ -81,7 +113,7 @@ export default function MovieDetails() {
                                                             </p>
 
 
-                                                          
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -97,14 +129,14 @@ export default function MovieDetails() {
                                                     className="btn btn-light w-100">Promoter
                                                     Program
                                                 </button>
-                                                
+
                                                 No refunds
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section> */}
+                        </section>
 
                         <section className="eventdetail-section">
                             <div className="container">

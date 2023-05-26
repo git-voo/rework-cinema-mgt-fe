@@ -5,7 +5,8 @@ import { TbDots, TbChevronLeft, TbChevronRight, TbSearch, TbWashDry, TbPlus } fr
 
 export default function PageNav() {
     return (
-        <div>PageNav
+        <div> 
+            {/* PageNav */}
             <div className="page_navigation_container">
 
                 <div className="pnc_content">
