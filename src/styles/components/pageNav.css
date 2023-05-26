@@ -112,6 +112,6 @@
 }
 .chev_left, .chev_right, .wash, .plus{
     background-color: white;
-    border-radius: 5px;
+    border-radius: 6px;
     margin: 2px;
 }
