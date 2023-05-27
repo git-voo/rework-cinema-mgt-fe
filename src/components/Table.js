@@ -93,10 +93,10 @@ export default function Table() {
                                 </td>
                                 <td>
                                     <div class="dropdown open">
-                                        <a  class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                        <button  class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <i class="fa fa-ellipsis-v"></i>
-                                        </a>
+                                        </button>
                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
                                             <button class="dropdown-item" ><i class="fa fa-pencil mr-1"></i> Edit</button>
                                             <button class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Delete</button>

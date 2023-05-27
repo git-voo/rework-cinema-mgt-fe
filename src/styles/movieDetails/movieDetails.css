@@ -1,43 +1,111 @@
 
-/* @media screen and (max-width: 1023px) {
-    .eventdetail-banner {
-        overflow: hidden;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .eventdetail-banner img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        height: 100%;
-    }
-}
-
-@media screen and (max-width: 1023px) {
-    .eventdetail-banner img {
-        width: auto !important;
-    }
-} */
-
-/* .movie_nav_2{
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 90%;
-margin: auto;
-};
-
-.Loggers{
-    color: yellow;
-    display: flex;
-} */
-
 .main_movie{
     width: 90%;
     margin: auto;
     
+
 }
+.movie_nav_2{
+    width: 80%;
+    padding-top: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Loggers{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+   
+
+}
+.movie_signin{
+    border: none;
+    background-color: #def1ed;
+    padding: 3px;
+    border-radius: 5px;
+    color: #2553d1;
+    /* cursor: pointer; */
+}
+.movie_login{
+    border: none;
+    
+    padding: 3px;
+    border-radius: 5px;
+}
+.movie_signin:hover{
+    background-color: #8cadb9;
+}
+.movie_login:hover{
+    background-color: #8cadb9;
+}
+.Calend{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 11, 12, 0.8)), url("../../../src/assets/images/event-details.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    height: 80vh;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.banner_back{
+    display: flex;
+    align-items: center;
+
+}
+.ml-1{
+    color: #9c4dd1;
+    cursor: pointer;
+}
+
+.BookNow{
+    border: 1px solid gray;
+    border-radius: 7px;
+    width: 200px;
+    background-color: #9c4dd1;
+    cursor: pointer;
+}
+.Promo{
+    border: none;
+    border-radius: 7px;
+    width: 200px;
+    background-color: #d8d0d0;
+    color: black;
+    cursor: pointer;
+}
+.date_time{
+    width: 25%;
+    margin: auto;
+    border: none;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.DT_content{
+    color: black;
+}
+.DT-text1{
+    color: #444242;
+    font-size: 12px;
+}
+.Refund{
+    color: #444242;
+}
+
+.mov_banner{
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
+
 
