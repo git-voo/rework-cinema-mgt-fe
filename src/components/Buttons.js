@@ -19,7 +19,10 @@ const Buttons = () => {
         <button className="search">
           <BsSearch />
         </button>
+        
+        <div className='lme-btn'>
         <button className="lme">Load More Events</button>
+        </div>
       </div>
 
       <div className="bkr">

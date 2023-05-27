@@ -1,12 +1,20 @@
 import React from "react";
 import CardProps from "../contexts/Cards";
-import { cardBg1 } from "./Image";
+// import { cardBg1 } from "./Image";
+import  image1  from "../assets/images/imag1.jpeg";
+import  image2  from "../assets/images/image2.jpeg";
+import  image3  from "../assets/images/image3.jpeg";
+import  image4  from "../assets/images/image4.jpeg";
+import  image5  from "../assets/images/image5.jpeg";
+import  image6  from "../assets/images/image6.jpeg";
+import  image7  from "../assets/images/image7.jpeg";
+
 
 function CinemaCard() {
   const cards = [
     {
       id: 1,
-      bgImg: cardBg1,
+      bgImg: image1,
       price: "100",
       month: "Sep",
       day: "12",
@@ -16,7 +24,7 @@ function CinemaCard() {
     },
     {
       id: 2,
-      bgImg: cardBg1,
+      bgImg: image2,
       price: "100",
       month: "Sep",
       day: "12",
@@ -26,7 +34,7 @@ function CinemaCard() {
     },
     {
       id: 3,
-      bgImg: cardBg1,
+      bgImg: image3,
       price: "100",
       month: "Sep",
       day: "12",
@@ -36,7 +44,7 @@ function CinemaCard() {
     },
     {
       id: 4,
-      bgImg: cardBg1,
+      bgImg: image4,
       price: "100",
       month: "Sep",
       day: "12",
@@ -46,7 +54,7 @@ function CinemaCard() {
     },
     {
       id: 5,
-      bgImg: cardBg1,
+      bgImg: image5,
       price: "100",
       month: "Sep",
       day: "12",
@@ -56,7 +64,7 @@ function CinemaCard() {
     },
     {
       id: 6,
-      bgImg: cardBg1,
+      bgImg: image6,
       price: "100",
       month: "Sep",
       day: "12",
@@ -66,7 +74,7 @@ function CinemaCard() {
     },
     {
       id: 7,
-      bgImg: cardBg1,
+      bgImg: image7,
       price: "100",
       month: "Sep",
       day: "12",

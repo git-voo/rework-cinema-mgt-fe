@@ -1,5 +1,5 @@
 import "../styles/components/navigation.scss"
-import logo from "../assets/icons/logo.jpeg";
+import logo from "../assets/images/EVENTBUX.png";
 import { BsSearch } from "react-icons/bs";
 
 export default function Navigation() {
@@ -15,8 +15,8 @@ export default function Navigation() {
         </div>
         <div className="links-section">
           <button>Help center</button>
-          <button>Login</button>
-          <button>Sign up</button>
+          <button className="login">Login</button>
+          <button className="signup">Sign up</button>
         </div>
       </nav>
 
@@ -68,13 +68,13 @@ export default function Navigation() {
           <h5>Upcoming Events</h5>
         </div>
         <div className="options">
-          <select name="" id="">
+          <select className="wea" name="" id="">
             <option value="">Weekdays</option>
           </select>
-          <select name="" id="">
+          <select className="wea" name="" id="">
             <option value="">Event Type</option>
           </select>
-          <select name="" id="">
+          <select className="wea" name="" id="">
             <option value="">Any Category</option>
           </select>
         </div>

@@ -11,7 +11,7 @@ import { AiOutlineCustomerService, AiOutlineInfoCircle, AiOutlineSetting } from 
 
 
 
-const Sidebar = () => {
+const  Sidebar = () => { 
     return (
         <div>
             <div className="contain">

@@ -5,18 +5,21 @@ import Table from "./components/Table";
 import Buttons from "./components/Buttons";
 import Sidebar from "./components/Sidebar";
 import CinemaCard from "./utils/CinemaCards";
+import HomePage from "./pages/HomePage";
 
 
 
 function App() {
   return (
     <div >
-      <Buttons/>
+
+      <HomePage/>
+      {/* <Buttons/>
       <Sidebar/>
       <Footer/>
       
       <Table/> 
-      <CinemaCard/>
+      <CinemaCard/> */}
     </div>
   );
 }
