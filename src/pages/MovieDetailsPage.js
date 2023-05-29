@@ -1,9 +1,12 @@
 import React from 'react'
 import "../styles/movieDetails/movieDetails.css"
-import { MdLocationPin } from "react-icons/md"
+import { MdLocationPin, MdFacebook } from "react-icons/md"
 import { IoMdArrowRoundBack } from "react-icons/io"
 import { BiPlus } from "react-icons/bi"
+import { AiFillTwitterCircle } from "react-icons/ai"
+import { FaLinkedinIn } from "react-icons/fa"
 import PageNav from '../components/PageNav'
+import img_location from "../assets/images/location_image.jpg";
 export default function MovieDetailsPage() {
     return (
         <div>MovieDetailsPage
@@ -18,7 +21,7 @@ export default function MovieDetailsPage() {
                         </div>
                     </div>
 
-                    <div classNameName="eventdetail-page">
+                    <div classNameName="eventdetail-page row">
 
 
                         <section className='Calend'>
@@ -58,7 +61,100 @@ export default function MovieDetailsPage() {
                                 {/* </div> */}
                                 <center className='Refund fs-6'><div>Refund</div></center>
                             </div>
+                        </section>
 
+                        <section className='Movie_head mt-6'>
+
+                            <div className="Descr_Hours">
+
+                                <div className="Mov_description">
+
+                                    <div>
+                                        <h1 className='fw-bold fs-4 ml-6'>Description</h1>
+                                    </div>
+                                    <p className='w-75 m-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quod voluptatibus deserunt nulla debitis maxime mollitia
+                                        aperiam id numquam possimus soluta beatae, ipsum
+                                        exercitationem eligendi officiis minima sit! Fuga,
+                                        pariatur eveniet.0
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quod voluptatibus deserunt nulla debitis maxime mollitia
+                                        aperiam id numquam possimus soluta beatae, ipsum
+                                        exercitationem eligendi officiis minima sit! Fuga,
+                                        pariatur eveniet.0
+                                    </p>
+
+                                    <p className='w-75 m-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quod voluptatibus deserunt nulla debitis maxime mollitia
+                                        aperiam id numquam possimus soluta beatae, ipsum
+                                        exercitationem eligendi officiis minima sit! Fuga,
+                                        pariatur eveniet.0
+                                    </p>
+                                </div>
+
+                                <div className="Mov_Hours m-4">
+                                    <h1 className='fw-bold fs-4 mb-3'>Hours</h1>
+                                    <p>Weekday Hours: <span className='fw-bold'>7PM - 10PM</span></p>
+                                    <p>Sunday Hours: <span className='fw-bold'>10AM - 3PM</span></p>
+                                </div>
+
+                                <div className="Questions m-4">
+                                    <h1 className='fw-bold fs-4 mb-3'>How can I contact the organizer with any question?</h1>
+                                    <p className='w-75'>Please visit <span className='link2 fw-bold'>www.reworkacademy.com</span> and refer to the FAQS section for all
+                                        questions and contact information</p>
+                                </div>
+
+                            </div>
+
+                            <div className="Location_Dream ">
+
+                                <div className="Mov_location">
+                                    <h1 className='fw-bold fs-4 mb-1 ml-5'>Movie Location</h1>
+                                    <img src={img_location} alt="" className='m-4' />
+                                </div>
+
+                                <div className="Dream">
+                                    <h1 className='fw-bold fs-4 ml-5'>Dream World Wide in Rework</h1>
+                                    <p className='w-75 ml-5'>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Odit quisquam explicabo fugit,
+                                        praesentium libero nihil reiciendis aperiam alias
+                                        minus tempora cumque ducimus autem ratione vitae
+                                        iusto neque sapiente. Sunt, id.
+                                        minus tempora cumque ducimus autem ratione vitae
+                                        iusto neque sapiente. Sunt, id.
+
+                                    </p>
+                                </div>
+
+                                {/* <div className="Tags ml-5">
+                                    <h1 className='fw-bold fs-4 mb-3 mt-3'>Tags</h1>
+                                    <div className="all_tags w-75 d-flex">
+                                        <div className="tag1 ">Tag 1</div>
+                                        <div className="tag1 ">Tag 1</div>
+                                        <div className="tag1 ">Tag 1</div>
+                                        <div className="tag1 ">Tag 1</div>
+                                        <div className="tag1 ">Tag 1</div>
+                                    </div>
+                                </div> */}
+                                <div className="tags w-75">
+                                    <h5 className='fs-4 fw-bold mb-2'>Tags</h5>
+                                    <button className="sub-tags m-1">Indonesia Events</button>
+                                    <button className="sub-tags m-1">Jakatar Events</button>
+                                    <button className="sub-tags m-1">UI</button>
+                                    <button className="sub-tags m-1">Thing to do in Jakatar</button>
+                                    <button className="sub-tags m-1">Jakatar Seminar</button>
+                                </div>
+
+                                <div className="Share">
+                                    <h1 className='fw-bold fs-4 mb-3 ml-5 mt-3'>Share With Friends</h1>
+                                    <div className="social_icons ml-3 gap-2">
+                                        <div className=''><MdFacebook className='facebook_icon fs-1' /></div>
+                                        <div className=''><AiFillTwitterCircle className='twitter_icon fs-1' /> </div>
+                                        <div className=''><FaLinkedinIn className="linkedln_icon fs-1" /></div>
+                                    </div>
+                                </div>
+
+                            </div>
 
                         </section>
 

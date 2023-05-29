@@ -22,7 +22,7 @@
 .movie_signin{
     border: none;
     background-color: #def1ed;
-    padding: 3px;
+    padding: 4px;
     border-radius: 5px;
     color: #2553d1;
     /* cursor: pointer; */
@@ -30,14 +30,16 @@
 .movie_login{
     border: none;
     
-    padding: 3px;
+    padding: 4px;
     border-radius: 5px;
 }
 .movie_signin:hover{
     background-color: #8cadb9;
+    transition: 0.3s
 }
 .movie_login:hover{
     background-color: #8cadb9;
+    transition: 0.3s
 }
 .Calend{
     display: flex;
@@ -108,4 +110,68 @@
     padding: 20px;
 }
 
+.Movie_head{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.Descr_Hours{
+    width: 50%;
+    margin: auto;
+}
+.Location_Dream{
+    width: 50%;
+    margin: auto;
+}
+.Mov_location img{
+    border-radius: 10px;
+}
+.Share{
+    width: 50%;
+}
+.social_icons{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.facebook_icon{
+    color: #3f50e2;
+    cursor: pointer;
+}
+.twitter_icon{
+    color: #127ebd;
+    cursor: pointer;
+}
+.linkedln_icon{
+    background-color: #061c64bd;
+    color: white;
+    padding: 4px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+.link2{
+    color: #127ebd;
+}
+
+.tags{
+    margin-top: 40px;
+    padding: 0px 20px 0px 20px;
+    
+  }
+  .sub-tags{
+    margin-top: 5px;
+    background-color: #9995a171;
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    /* height: fit-content; */
+    border-radius: 10px;
+    /* width: fit-content; */
+  }
 
