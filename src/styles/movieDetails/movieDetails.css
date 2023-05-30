@@ -62,6 +62,7 @@
 .banner_back{
     display: flex;
     align-items: center;
+    cursor: pointer;
 
 }
 .ml-1{
@@ -102,6 +103,7 @@
 }
 .Refund{
     color: #444242;
+    cursor: pointer;
 }
 
 .mov_banner{

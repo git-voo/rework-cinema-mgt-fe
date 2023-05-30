@@ -63,7 +63,7 @@ export default function MovieDetailsPage() {
                             </div>
                         </section>
 
-                        <section className='Movie_head mt-6'>
+                        <section className='Movie_head mt-6 mb-6'>
 
                             <div className="Descr_Hours">
 
