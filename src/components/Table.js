@@ -1,7 +1,7 @@
 
 import React from 'react'
 import "../styles/table/table.css"
-// import {img1} from "../assets/images/logo.jpeg"
+import img1 from "../assets/images/logo.jpeg"
 
 
 
@@ -9,8 +9,8 @@ export default function Table() {
     return (
         <div>Table
 
-            <div class="main-content">
-                <div class="container">
+            <div class="main-table-content">
+                <div class="table-container">
                     <h1>Cinema Table UI</h1>
                     <br />
                    
@@ -30,7 +30,7 @@ export default function Table() {
                                 <td>
                                     <div class="user-info">
                                         <div class="user-info__img">
-                                            <img src="" alt="User Img" />
+                                            <img src={img1} alt="User Img" />
                                         </div>
                                         <div class="user-info__basic">
                                             <h5 class="mb-0">Tony Brian</h5>
@@ -54,13 +54,13 @@ export default function Table() {
                                 </td>
                                 <td>
                                     <div class="dropdown open">
-                                        <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                        <div href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <i class="fa fa-ellipsis-v"></i>
-                                        </a>
+                                        </div>
                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
-                                            <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                            <button class="dropdown-item" ><i class="fa fa-pencil mr-1"></i> Edit</button>
+                                            <button class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Delete</button>
                                         </div>
                                     </div>
                                 </td>
@@ -69,7 +69,7 @@ export default function Table() {
                                 <td>
                                     <div class="user-info">
                                         <div class="user-info__img">
-                                            <img src="img/user1.jpg" alt="User Img" />
+                                            <img src={img1} alt="User Img" />
                                         </div>
                                         <div class="user-info__basic">
                                             <h5 class="mb-0">Agent Kings</h5>
@@ -86,20 +86,20 @@ export default function Table() {
                                 </td>
                                 <td>
                                     <h6 class="mb-0">+91 9876543215</h6>
-                                    <a href="#!"><small>Contact</small></a>
+                                    <div ><small>Contact</small></div>
                                 </td>
                                 <td>
                                     <h6 class="mb-0">Dr. Serah</h6>
                                 </td>
                                 <td>
                                     <div class="dropdown open">
-                                        <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                        <button  class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <i class="fa fa-ellipsis-v"></i>
-                                        </a>
+                                        </button>
                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
-                                            <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                            <button class="dropdown-item" ><i class="fa fa-pencil mr-1"></i> Edit</button>
+                                            <button class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Delete</button>
                                         </div>
                                     </div>
                                 </td>
@@ -108,7 +108,7 @@ export default function Table() {
                                 <td>
                                     <div class="user-info">
                                         <div class="user-info__img">
-                                            <img src="img/user1.jpg" alt="User Img" />
+                                            <img src={img1} alt="User Img" />
                                         </div>
                                         <div class="user-info__basic">
                                             <h5 class="mb-0">Jim Kennedy</h5>
@@ -122,24 +122,24 @@ export default function Table() {
                                 <td>
                                     <h6 class="mb-0">06:00 PM</h6>
                                     <small>2 Feb 2021</small>
-                                    
+
                                 </td>
                                 <td>
                                     <h6 class="mb-0">+91 9876543215</h6>
-                                    <a href="#!"><small>Contact</small></a>
+                                    <button ><small>Contact</small></button>
                                 </td>
                                 <td>
                                     <h6 class="mb-0">Dr. Anthony</h6>
                                 </td>
                                 <td>
                                     <div class="dropdown open">
-                                        <a href="#!" class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
+                                        <button  class="px-2" id="triggerId1" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <i class="fa fa-ellipsis-v"></i>
-                                        </a>
+                                        </button>
                                         <div class="dropdown-menu" aria-labelledby="triggerId1">
-                                            <a class="dropdown-item" href="#"><i class="fa fa-pencil mr-1"></i> Edit</a>
-                                            <a class="dropdown-item text-danger" href="#"><i class="fa fa-trash mr-1"></i> Delete</a>
+                                            <button class="dropdown-item" ><i class="fa fa-pencil mr-1"></i> Edit</button>
+                                            <button class="dropdown-item text-danger" ><i class="fa fa-trash mr-1"></i> Delete</button>
                                         </div>
                                     </div>
                                 </td>

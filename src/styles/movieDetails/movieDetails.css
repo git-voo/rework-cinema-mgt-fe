@@ -1,0 +1,183 @@
+
+.main_movie{
+    width: 90%;
+    margin: auto;
+    
+
+}
+.movie_nav_2{
+    width: 80%;
+    padding-top: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Loggers{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+   
+
+}
+.movie_signin{
+    border: none;
+    background-color: #def1ed;
+    padding: 4px;
+    border-radius: 5px;
+    color: #2553d1;
+    /* cursor: pointer; */
+}
+.movie_login{
+    border: none;
+    
+    padding: 4px;
+    border-radius: 5px;
+}
+.movie_signin:hover{
+    background-color: #8cadb9;
+    transition: 0.3s
+}
+.movie_login:hover{
+    background-color: #8cadb9;
+    transition: 0.3s
+}
+.Calend{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(2, 11, 12, 0.8)), url("../../../src/assets/images/event-details.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+    height: 80vh;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.banner_back{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.ml-1{
+    color: #9c4dd1;
+    cursor: pointer;
+}
+
+.BookNow{
+    border: 1px solid gray;
+    border-radius: 7px;
+    width: 200px;
+    background-color: #9c4dd1;
+    cursor: pointer;
+}
+.Promo{
+    border: none;
+    border-radius: 7px;
+    width: 200px;
+    background-color: #d8d0d0;
+    color: black;
+    cursor: pointer;
+}
+.date_time{
+    width: 25%;
+    margin: auto;
+    border: none;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.DT_content{
+    color: black;
+}
+.DT-text1{
+    color: #444242;
+    font-size: 12px;
+}
+.Refund{
+    color: #444242;
+    cursor: pointer;
+}
+
+.mov_banner{
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
+
+.Movie_head{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.Descr_Hours{
+    width: 50%;
+    margin: auto;
+}
+.Location_Dream{
+    width: 50%;
+    margin: auto;
+}
+.Mov_location img{
+    border-radius: 10px;
+}
+.Share{
+    width: 50%;
+}
+.social_icons{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.facebook_icon{
+    color: #3f50e2;
+    cursor: pointer;
+}
+.twitter_icon{
+    color: #127ebd;
+    cursor: pointer;
+}
+.linkedln_icon{
+    background-color: #061c64bd;
+    color: white;
+    padding: 4px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+.link2{
+    color: #127ebd;
+}
+
+.tags{
+    margin-top: 40px;
+    padding: 0px 20px 0px 20px;
+    
+  }
+  .sub-tags{
+    margin-top: 5px;
+    background-color: #9995a171;
+    color: #000000;
+    outline: none;
+    border: none;
+    padding: 8px 10px;
+    /* height: fit-content; */
+    border-radius: 10px;
+    /* width: fit-content; */
+  }
+  .others{
+    width: 80%;
+    margin: auto;
+  }
+

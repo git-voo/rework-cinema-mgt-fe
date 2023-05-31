@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
-body {
+/* {
 	background: #f9f9f9;
 	font-family: "Roboto", sans-serif;
-}
+} */
 
-.main-content {
-	padding-top: 100px;
-	padding-bottom: 100px;
+.main-table-content {
+	/* padding-top: 100px;
+	padding-bottom: 100px; */
+	width: 90%;
+	margin: auto;
+	overflow-x: scroll;
 }
 
 .table {
@@ -60,4 +63,11 @@ body {
 		margin: auto;
 	}
       
+  }
+
+  @media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	.main-content{
+	  width: 100%;
+	}
   }
