@@ -1,4 +1,4 @@
-ul{
+.sideBar-container{
   list-style: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 10px;
@@ -10,7 +10,7 @@ ul{
   /* padding: 0 10px; */
 }
 
-li{
+.sideBar-links{
   /* padding: 20px 0; */
   width: fit-content;
   display: flex;
@@ -19,7 +19,7 @@ li{
   /* padding: 0px 20px; */
 }
 
-ul:hover{
+.sideBar-container:hover{
   background-color: blueviolet;
   transform: scaleX(1.10);
   cursor: pointer;
