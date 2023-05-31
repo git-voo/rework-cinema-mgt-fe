@@ -1,13 +1,22 @@
 .contain-homepage {
-    padding: 80px;
+    /* padding: 80px; */
+    width: 100%; 
+    /* margin: 40px 0px; */
 }
 
+.banner-section-background{
+    background-color: #E9E3FA;
+    padding: 30px;
+    padding-bottom: 60px;
+}
 
 .slider-container {
+    width: 90%;
+    margin: auto; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    background-color: #894eff28;
+    background-color: #E9E3FA;
 }
 
 
@@ -38,10 +47,17 @@
 }
 
 .left-side {
-    padding-left: 25px;
+    padding-left: 25px; 
+}
+
+ 
+
+.banner-bg{
+    background-color: #E9E3FA;
 }
 
 
+ 
 
 
 
