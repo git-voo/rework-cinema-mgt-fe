@@ -85,7 +85,7 @@ function CinemaCard() {
   ];
 
   return (
-    <main className="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 gap-3 p-4">
+    <main className="grid xl:grid-cols-3 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 p-4">
       {cards.map((data) => (
         <CardProps
           bgImg={data.bgImg}

@@ -7,13 +7,15 @@ import { AiFillTwitterCircle } from "react-icons/ai"
 import { FaLinkedinIn } from "react-icons/fa"
 import PageNav from '../components/PageNav'
 import img_location from "../assets/images/location_image.jpg";
+import CinemaCard from '../utils/CinemaCards'
+import Footer from '../components/Footer'
 export default function MovieDetailsPage() {
     return (
         <div>MovieDetailsPage
             <PageNav />
-            <div classNameNameName="my_movie">
-                <div classNameName="main_movie">
-                    <div className="movie_nav_2">
+            <div classNameNameName="my_movie container">
+                <div classNameName="main_movie row">
+                    <div className="movie_nav_2 col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <div><h1 className='fs-4 fw-bold'>Event bux</h1></div>
                         <div className='Loggers'>
                             <div className="movie_login fw-bold">Login</div>
@@ -24,7 +26,7 @@ export default function MovieDetailsPage() {
                     <div classNameName="eventdetail-page row">
 
 
-                        <section className='Calend'>
+                        <section className='Calend col-xs-12 col-sm-6 col-md-4 col-lg-2'>
 
                             <div className="mov_banner">
                                 <div className="banner_back mb-3">
@@ -63,7 +65,7 @@ export default function MovieDetailsPage() {
                             </div>
                         </section>
 
-                        <section className='Movie_head mt-6 mb-6'>
+                        <section className='Movie_head mt-6 mb-6 col-xs-12 col-sm-1 col-md-3 col-lg-1'>
 
                             <div className="Descr_Hours">
 
@@ -157,6 +159,17 @@ export default function MovieDetailsPage() {
                             </div>
 
                         </section>
+
+                        <section className='others col-xs-12 col-sm-6 col-md-4 col-lg-2'>
+                            <div className="others_container">
+                                <h1 className='fw-bold fs-3 mb-5'>Other Events You May Like for me</h1>
+                                <CinemaCard />
+                            </div>
+
+                        </section>
+                        <div className="movie_footer mb-5">
+                            <Footer />
+                        </div>
 
 
 

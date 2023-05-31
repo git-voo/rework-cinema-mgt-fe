@@ -176,4 +176,8 @@
     border-radius: 10px;
     /* width: fit-content; */
   }
+  .others{
+    width: 80%;
+    margin: auto;
+  }
 

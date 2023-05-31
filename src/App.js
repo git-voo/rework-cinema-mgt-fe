@@ -21,15 +21,15 @@ function App() {
     <div >
 
       <HomePage/>
-      {/* <Buttons/>
+       <Buttons/>
       <Sidebar/>
       <Footer/>
       <PageNav/>
       <Table/> 
-      <CinemaCard/> */}
       <MovieDetailsPage/>
+      <CinemaCard/>
     </div>
   );
-}
+};
 
 export default App;
