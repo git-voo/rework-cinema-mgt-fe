@@ -1,0 +1,73 @@
+.contain-homepage {
+    padding: 80px;
+}
+
+
+.slider-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #894eff28;
+}
+
+
+.d-block {
+    height: 500px;
+}
+
+.slider-text1 {
+    color: #894eff;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.slider-text2 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+
+.see-Today {
+    background-color: white;
+    color: #894eff;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-top: 0pt20px;
+}
+
+.left-side {
+    padding-left: 25px;
+}
+
+
+
+
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    .slider-container {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+    .slider-container {
+        display: grid;
+        grid-template-columns: repeat(1fr 1fr);
+
+    }
+}

@@ -10,6 +10,7 @@ import Table from "./components/Table";
 import Buttons from "./components/Buttons";
 import Sidebar from "./components/Sidebar";
 import CinemaCard from "./utils/CinemaCards";
+import HomePage from "./pages/HomePage";
 import PageNav from "./components/PageNav";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
 
@@ -18,13 +19,14 @@ import MovieDetailsPage from "./pages/MovieDetailsPage";
 function App() {
   return (
     <div >
-      <Buttons/>
+
+      <HomePage/>
+      {/* <Buttons/>
       <Sidebar/>
       <Footer/>
       <PageNav/>
       <Table/> 
       <CinemaCard/>
-      <MovieDetailsPage/>
     </div>
   );
 }
