@@ -13,6 +13,7 @@ import CinemaCard from "./utils/CinemaCards";
 import HomePage from "./pages/HomePage";
 import PageNav from "./components/PageNav";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
+import Cards from "./components/Cards";
 
 
 
@@ -27,7 +28,9 @@ function App() {
       <PageNav/>
       <Table/> 
       <MovieDetailsPage/>
-      <CinemaCard/>
+      <Cards/>
+
+    
     </div>
   );
 };
