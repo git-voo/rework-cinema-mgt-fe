@@ -19,7 +19,7 @@ const HomePage = () => {
             <img className="logo-image" src={logo} alt="logo" />
           </div>
           <div className="links-section">
-            <button>Help center</button>
+            {/* <button>Help center</button> */}
             <button className="login">Login</button>
             <button className="signup">Sign up</button>
           </div>
