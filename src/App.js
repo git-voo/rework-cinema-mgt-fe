@@ -14,21 +14,28 @@ import HomePage from "./pages/HomePage";
 import PageNav from "./components/PageNav";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
 
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/admin/Dashboard";
+import Index from "./pages/admins/Index";
 
 function App() {
   return (
-    <div >
+    <BrowserRouter >
 
-      <HomePage/>
-       <Buttons/>
+      {/* <HomePage/> */}
+       {/* <Buttons/>
       <Sidebar/>
       <Footer/>
       <PageNav/>
       <Table/> 
       <MovieDetailsPage/>
-      <CinemaCard/>
-    </div>
+      <CinemaCard/> */}
+
+
+      <Routes>
+        <Route path="/admin" element={<Index/>} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
