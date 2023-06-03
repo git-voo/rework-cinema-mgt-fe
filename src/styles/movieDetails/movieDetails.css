@@ -1,9 +1,11 @@
-
+.movie-detail-container{
+    position: relative;
+    top: 70px; 
+}
 .main_movie{
     width: 90%;
     margin: auto;
-    
-
+     
 }
 .movie_nav_2{
     width: 80%;

@@ -8,13 +8,14 @@ import { FaLinkedinIn } from "react-icons/fa"
 import PageNav from '../components/PageNav'
 import img_location from "../assets/images/location_image.jpg"; 
 import Footer from '../components/Footer'
-import Cards from '../components/Cards'
+import Cards from '../components/Cards'  
+import GoTo from '../utils/GoTo'
 export default function MovieDetailsPage() {
     return (
         <div> 
             {/* <PageNav /> */}
-            <div classNameNameName="my_movie container">
-                <div classNameName="main_movie row">
+            <div className="movie-detail-container">
+                <div className="main_movie row">
                     {/* <div className="movie_nav_2 col-xs-12 col-sm-6 col-md-4 col-lg-2">
                         <div><h1 className='fs-4 fw-bold'>Event bux</h1></div>
                         <div className='Loggers'>
@@ -23,13 +24,15 @@ export default function MovieDetailsPage() {
                         </div>
                     </div> */}
 
-                    <div classNameName="eventdetail-page row">
+                    <div className="eventdetail-page row">
 
 
                         <section className='Calend col-xs-12 col-sm-6 col-md-4 col-lg-2'>
 
                             <div className="mov_banner">
-                                <div className="banner_back mb-3">
+                                <div className="banner_back mb-3 bg-danger w-25"
+                                // onClick={()=> { GoTo("/", false) }}
+                                >
                                     <div className="back_icon fs-5"> <IoMdArrowRoundBack /></div>
                                     <div className="back_text fs-6 px-2"> Back</div>
                                 </div>
