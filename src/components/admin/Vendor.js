@@ -9,7 +9,7 @@ import "../../styles/admins/dashboard.scss"
 import { Carousel } from "react-bootstrap";
 import articles from '../../json/news.json'
 
-export default function Dashboard() {
+export default function Vendor() {
 
     let [data, setData] = useState([])
     useEffect(() => {
