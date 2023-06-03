@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../assets/images/EVENTBUX.png";
 import cardImg1 from "../assets/images/cardImg1.jpg";
 
@@ -10,7 +9,12 @@ import Footer from "../components/Footer";
 import Carousel from "react-bootstrap/Carousel";
 import Cards from "../components/Cards";
 
+import React, { useState, useEffect } from 'react'
+import axios from 'axios';
+
 const HomePage = () => {
+
+  
   return (
     <div>
       <div className="banner-bg">
@@ -150,7 +154,7 @@ const HomePage = () => {
 
         {/* card section */}
 
-        <Cards />
+        <Cards/>
 
         {/* down to footer */}
 
