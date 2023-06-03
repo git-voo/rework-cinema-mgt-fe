@@ -1,61 +1,76 @@
-import React, { useState, useEffect } from 'react'
-import "../../src/styles/cards/cards.css"
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import React, { useState, useEffect } from "react";
+import "../../src/styles/cards/cards.scss"; 
+import Card from "react-bootstrap/Card"; 
 
-import image1 from "../assets/images/imag1.jpeg";
-
-import { AiOutlineUpload } from 'react-icons/ai'
-import { AiFillHeart } from 'react-icons/ai'
-import axios from 'axios';
+import { AiOutlineUpload } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai"; 
+import { axiosInstance } from "../services/AxiosInstance";
+import { Link } from "react-router-dom";
 
 const Cards = () => {
+  const [movies, setMovies] = useState([]);
 
-    const [movies, setMovies] = useState([]);
+  useEffect(() => {
+   axiosInstance.get("/movies/all")
+      .then((res) => {
+        console.log(res.data);
+        setMovies(res.data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-    useEffect(() => {
-        axios.get("https://visua-prime-6w73.onrender.com/movies/all").then((res) => {
-            console.log(res.data);
-            setMovies(res.data);
-        }).catch((err) => {
-            console.log(err)
-        })
-
-    }, [])
-
-    return (
-      <div className='container'>
-        {movies.map((movie) => (
-          <div className="card-container-grid" >
-            <div className="card-section">
-              <Card className='card-component' style={{ width: '18rem', background: "white" }}>
-                <div className="background-image">
-                  <Card.Img variant="top" src={movie.thumbnail} />
-                  <div className="cardbuttons">
+  return (
+    <div className="card-container">
+      <div className="card-container-grid">
+        {movies.length ? (
+          movies.map((movie) => {
+            return  <Link to={`/movie/${movie._id}`} className="card-section" key={movie._id}>
+              <Card
+                className="card-component"
+                // style={{ width: "18rem", background: "white" }}
+              >
+                <div className="card-image-section">
+                <div className="cardbuttons">
                     <div className="price">$10.00</div>
                     <div className="icons">
-                      <div><AiOutlineUpload /></div>
-                      <div><AiFillHeart /></div>
+                      <div>
+                        <AiOutlineUpload />
+                      </div>
+                      <div>
+                        <AiFillHeart />
+                      </div>
                     </div>
                   </div>
+
+                  <div className="image ">
+                  <img  src={movie.thumbnail} />
+                  </div>
+               
                 </div>
-                <div className="card-header">
+
+
+
+                <div className="card-footer">
                   <div className="date">
-                    <h4 className='month'>Sep</h4>
-                    <h4 className='day'>11</h4>
+                    <h4 className="month">Sep</h4>
+                    <h4 className="day">11</h4>
                   </div>
                   <div className="movie-title">
-                    <h4 className="title">{movie.title}</h4>
+                    <h5 className="title">{movie.title}</h5>
                     <p className="movie-description">{movie.description}</p>
                   </div>
                 </div>
               </Card>
-            </div>
-          </div>
-        ))}
+            </Link>;
+          })
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
-    );
-  }
-  
-  export default Cards;
-  
+    </div>
+  );
+};
+
+export default Cards;
