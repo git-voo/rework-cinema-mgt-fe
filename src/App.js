@@ -15,23 +15,30 @@ import PageNav from "./components/PageNav";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
 import Cards from "./components/Cards";
 
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./components/admin/Vendor";
+import Index from "./pages/admins/Index";
 
 function App() {
   return (
-    <div >
+    <BrowserRouter >
 
-      <HomePage/>
-       <Buttons/>
+      {/* <HomePage/> */}
+       {/* <Buttons/>
       <Sidebar/>
       <Footer/>
       <PageNav/>
       <Table/> 
       <MovieDetailsPage/>
-      <Cards/>
+      <Cards/> */}
+
+
+      <Routes>
+        <Route path="/admin" element={<Index/>} />
+      </Routes>
 
     
-    </div>
+    </BrowserRouter>
   );
 };
 
