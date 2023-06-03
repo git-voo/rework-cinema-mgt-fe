@@ -17,12 +17,13 @@ import Cards from "./components/Cards";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/admin/Vendor";
-import Index from "./pages/admins/Index";
+import Index from "./pages/admins/Index"; 
+import MainNavBar from "./components/MainNavBar";
 
 function App() {
   return (
     <BrowserRouter >
-
+<MainNavBar/>
       {/* <HomePage/> */}
        {/* <Buttons/>
       <Sidebar/>
@@ -34,6 +35,8 @@ function App() {
 
 
       <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/movie/:id" element={<MovieDetailsPage/>} />
         <Route path="/admin" element={<Index/>} />
       </Routes>
 

@@ -17,20 +17,19 @@ const HomePage = () => {
   
   return (
     <div>
-    <div className="banner-bg">
+    {/* <div className="banner-bg">
     <div className="nav_header_homepage">
         <nav className="main-nav">
           <div className="logo-section">
             <img className="logo-image" src={logo} alt="logo" />
           </div>
-          <div className="links-section">
-            {/* <button>Help center</button> */}
+          <div className="links-section"> 
             <button className="login">Login</button>
             <button className="signup">Sign up</button>
           </div>
         </nav>
       </div>
-    </div>
+    </div> */}
 
       <div className="contain-homepage">
 
