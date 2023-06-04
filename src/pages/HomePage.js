@@ -11,12 +11,14 @@ import Cards from "../components/Cards";
 
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
+import User_Info_Page from "./User_Info_Page";
 
 const HomePage = () => {
 
   
   return (
     <div>
+       
     {/* <div className="banner-bg">
     <div className="nav_header_homepage">
         <nav className="main-nav">
@@ -161,8 +163,9 @@ const HomePage = () => {
           <button className="lme">Load More Events</button>
         </div>
       </div>
-
+     
       <Footer />
+      <User_Info_Page/>
     </div>
   );
 };
