@@ -1,6 +1,5 @@
 import logo from "../assets/images/EVENTBUX.png";
 import cardImg1 from "../assets/images/cardImg1.jpg";
-
 import Navigation from "../components/Navigation";
 import { BsSearch } from "react-icons/bs";
 import CinemaCard from "../utils/CinemaCards";
@@ -8,10 +7,11 @@ import "../styles/homepage/homepage.css";
 import Footer from "../components/Footer";
 import Carousel from "react-bootstrap/Carousel";
 import Cards from "../components/Cards";
-
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import User_Info_Page from "./User_Info_Page";
+import UsersInfoPage from "./UsersInfoPage";
+
+
 
 const HomePage = () => {
 
@@ -163,9 +163,9 @@ const HomePage = () => {
           <button className="lme">Load More Events</button>
         </div>
       </div>
-     
+      <UsersInfoPage/>
       <Footer />
-      <User_Info_Page/>
+    
     </div>
   );
 };
