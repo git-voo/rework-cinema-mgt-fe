@@ -8,7 +8,7 @@ export default function TicketSum() {
                 <center className="TS-img">
                     <img src={img_Pers} alt="Movie_img" className='img-pers' />
                 </center>
-                <div className="TS_Sum_and_loc mt-2">
+                <div className="TS_Sum_and_loc p-2">
                     <div className="TS_sum">
                         <b className='m-4'>Ticket Summary</b>
                         <div className="sub d-flex">

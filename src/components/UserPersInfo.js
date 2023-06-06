@@ -3,7 +3,7 @@ import React from 'react'
 export default function UserPersInfo() {
     return (
         <div>
-            <b className=' fw-6'>Personal Information</b>
+            <b className=' fw-6 fs-4 pb-2'>Personal Information</b>
             <div className="checkboxs">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />

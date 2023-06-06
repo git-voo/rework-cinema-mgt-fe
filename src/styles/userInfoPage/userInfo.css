@@ -41,6 +41,7 @@
 
 .checkboxs{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -53,23 +54,28 @@
     width: 90%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     gap: 10px;
     /* padding: 5px 10px; */
 }
 .TS-img{
-    width: 80%;
+    width: 100%;
     margin: auto;
 
 }
 .img-pers{
     width: 100%;
+    height: 40vh;
     margin: auto;
+}
+.TS_Sum_and_loc{
+    background-color: #f0ebeb;
 }
 
 .UserPI{
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 /* .TickSum{
@@ -79,3 +85,12 @@
 .blur{
     color: blue;
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* CSS styles for mobile devices */
+    .UN_items{
+        display: none;
+    }
+
+  }
