@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../src/styles/buttons/buttons.css";
+import "../src/styles/components/navigation.scss";
 import "../src/styles/table/table.css";
 import "../src/styles/movieDetails/movieDetails.css"
 import "../src/styles/global.scss"
