@@ -1,7 +1,7 @@
 .otp-container{
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: space-between; 
+    gap: 10px; 
 
 
     input{
@@ -17,4 +17,15 @@
             border: 2px solid black;
         }
     }
+}
+
+
+@media (max-width:"600px"){
+.otp-container{
+    justify-content: center;
+    input{
+        width: 35px;
+        height: 35px; 
+    }
+}
 }

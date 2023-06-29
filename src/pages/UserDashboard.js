@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { nameCase } from "../utils/NameCase"
+import MainNavBar from "../components/MainNavBar"
 
 export default function UserDashboard(){
     const[user, setUser] = useState("")
@@ -12,7 +13,8 @@ export default function UserDashboard(){
    
     return (
         <div className="dashboard-container">
-            <h1>Welcome {nameCase(user?.fullName)}
+            <MainNavBar/>
+            <h1 className="top-4" style={{position:"relative", top:"100px"}}>Welcome {nameCase(user?.fullName)}
             
             </h1>
         </div>

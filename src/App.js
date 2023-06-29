@@ -27,6 +27,7 @@ import VariablesContext from "./contexts/VariablesContext";
 import AxiosConfiguration from "./services/AxiosConfiguration";
 import Interceptors from "./services/Interceptors";
 import UserDashboard from "./pages/UserDashboard";
+import Verification from "./pages/Verification";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
       <Routes> 
         <Route path="/" element={<HomePage/>} />
         <Route path="/auth/register" element={<Signup/>} />
+        <Route path="/auth/verify" element={<Verification/>} />
         
         <Route path="/auth/login" element={<Login/>} />
 
