@@ -29,6 +29,7 @@ import Interceptors from "./services/Interceptors";
 import UserDashboard from "./pages/UserDashboard";
 import Verification from "./pages/Verification";
 import CreatePassword from "./pages/auth/CreatePassword";
+import UsersInfoPage from "./pages/UsersInfoPage";
 
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
       <Cards/> */}
         {/* <MainNavBar/> */}
 
-
+{/* <UsersInfoPage/> */}
 
 
       <Routes> 

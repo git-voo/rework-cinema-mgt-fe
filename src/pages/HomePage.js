@@ -162,7 +162,7 @@ const HomePage = () => {
           <button className="lme">Load More Events</button>
         </div>
       </div>
-      <UsersInfoPage/>
+      {/* <UsersInfoPage/> */}
       <Footer />
     
     </div>
