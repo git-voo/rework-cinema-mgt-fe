@@ -1,0 +1,96 @@
+/*User information Navigation*/
+.UN_container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blueviolet;
+}
+.UN-content{
+    color: white;
+    padding-top: 8px;
+}
+.MovieBux{
+    color: white;
+    padding-top: 8px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.UN_items{
+    cursor: pointer;
+}
+.set{
+    border: none;
+    border-radius: 100px;
+    width: 18px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    outline: none;
+}
+.options{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+    
+}
+
+
+.checkboxs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub{
+    align-items: center;
+    justify-content: space-between;
+}
+.User_info{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* padding: 5px 10px; */
+}
+.TS-img{
+    width: 100%;
+    margin: auto;
+
+}
+.img-pers{
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+}
+.TS_Sum_and_loc{
+    background-color: #f0ebeb;
+}
+
+.UserPI{
+    width: 60%;
+    margin: auto;
+}
+/* .TickSum{
+    width: 40%;
+    margin: auto;
+} */
+.blur{
+    color: blue;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* CSS styles for mobile devices */
+    .UN_items{
+        display: none;
+    }
+
+  }
