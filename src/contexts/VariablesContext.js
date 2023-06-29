@@ -8,10 +8,10 @@ export default function VariablesContext({ children }) {
     pending: false,
     error: "",
     success: "",
+    from:"",
   });
 
-  const [code, setCode] = useState("");
-
+  const [code, setCode] = useState(""); 
   const [user, setUser] = useState("");
 
   const exportData = {
@@ -41,6 +41,7 @@ export default function VariablesContext({ children }) {
 
 async function handleSendCode(email){
   const {data, error} = await validateEmail(email)
+  return {data, error}
 
 }
 

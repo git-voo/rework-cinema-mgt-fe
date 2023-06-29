@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import OTPForm from "../components/OTPForm";
 import { useContext, useEffect, useState } from "react";
 import { variableManager } from "../contexts/VariablesContext";
@@ -10,10 +10,13 @@ export default function Verification() {
   const navigate = useNavigate();
   const { code, operation, user, setUser, handleSendCode } =
     useContext(variableManager);
-  const [error, setError] = useState("");
-
-  const [count, setCount] = useState(0);
+  const [error, setError] = useState(""); 
   const [allowResend, setAllowResend] = useState(false);
+
+
+  const location = useLocation()
+  const searchParams = new URLSearchParams(location.search)
+  const resetEmail = searchParams.get("email")
 
   useEffect(() => {
     const localUser = localStorage.getItem("primeUser");
@@ -24,34 +27,23 @@ export default function Verification() {
     };
   }, []);
 
-  //   useEffect(() => {
-  //     if (count > 0) {
-  //       const countInterval = setInterval(() => {
-  //         setCount((prev) => prev - 1);
-  //       }, 1000);
-  //       return () => {
-  //         clearInterval(countInterval);
-  //       };
-  //     }
-  //   }, [count]);
-
-  //   function initiateCountDown() {
-  //     setCount(6)
-  //   }
-
   async function handleSubmit(payload) {
-    const { data, error } = await verifyEmail(payload);
-
-    console.log(data ? data : error);
+    const { data, error } = await verifyEmail(payload); 
     if (data) {
-      navigate("/user/dashboard");
+      if (operation.from !== "forgotPassword") {
+        navigate("/user/dashboard");
+      } else {
+        navigate(`/auth/new-password?email=${data.email}`);
+      }
     }
   }
 
   function handleValidation() {
-    console.log(user);
     if (code.length === 6) {
-      handleSubmit({ email: user.email, verificationCode: code });
+      handleSubmit({
+        email: resetEmail || user?.email,
+        verificationCode: code,
+      });
     } else {
       setError("Invalid OTP, OTP must be 6 digits");
       setTimeout(() => {
@@ -72,7 +64,7 @@ export default function Verification() {
           </center>
 
           <center>
-            <OTPForm />
+            <OTPForm callBack={handleValidation}/>
           </center>
 
           {error && <div className="error">{error}</div>}
@@ -83,21 +75,23 @@ export default function Verification() {
             </button>
           </div>
 
-          <div className="button-section mt-2 for-mobile">
-            <button
-              className="bg-light text-info"
-              onClick={() => {
-                const skipConfirmation = window.confirm(
-                  "if you skip this step you may be asked to do it later. Skip?"
-                );
-                if (skipConfirmation) {
-                  navigate("/user/dashboard");
-                }
-              }}
-            >
-              Skip
-            </button>
-          </div>
+          {operation.from !== "forgotPassword" && (
+            <div className="button-section mt-2 for-mobile">
+              <button
+                className="bg-light text-info"
+                onClick={() => {
+                  const skipConfirmation = window.confirm(
+                    "if you skip this step you may be asked to do it later. Skip?"
+                  );
+                  if (skipConfirmation) {
+                    navigate("/user/dashboard");
+                  }
+                }}
+              >
+                Skip
+              </button>
+            </div>
+          )}
 
           <center className="note ">
             Didn't get code? &nbsp;
@@ -118,20 +112,20 @@ export default function Verification() {
                     handleSendCode(user.email);
                   }}
                 >
-                  Resend   in  &nbsp; 
+                  Resend in &nbsp;
                 </span>
-              
+
                 {
                   <span className="text-info">
-                    <CountDown 
+                    <CountDown
                       from={60}
                       onComplete={() => setAllowResend(true)}
                     />
                   </span>
                 }
               </>
-            )} 
-          </center> 
+            )}
+          </center>
         </div>
       </div>
 
@@ -141,9 +135,26 @@ export default function Verification() {
         </center>
 
         <div className="welcome-section">
-          <center>
-            <p className="welcome">Email Verification</p>
-            <p
+          {operation.from !== "forgotPassword" ? (
+            <center>
+              <p className="welcome">Email Verification</p>
+              <p
+                className="note text-light pointer bg-dark"
+                onClick={() => navigate("/user/dashboard")}
+              >
+                Skip verification? you'd be prompted to do this later
+              </p>
+
+              <div className="button-section">
+                <button onClick={() => navigate("/user/dashboard")}>
+                  Skip
+                </button>
+              </div>
+            </center>
+          ) : (
+            <center>
+              <p className="welcome bg-dark">Recover Password</p>
+              {/* <p
               className="note text-light pointer bg-dark"
               onClick={() => navigate("/user/dashboard")}
             >
@@ -152,8 +163,9 @@ export default function Verification() {
 
             <div className="button-section">
               <button onClick={() => navigate("/user/dashboard")}>Skip</button>
-            </div>
-          </center>
+            </div> */}
+            </center>
+          )}
         </div>
 
         <center className="copyright">Copyright © 2023</center>

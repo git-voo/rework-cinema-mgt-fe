@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "../styles/components/otpform.scss";
 import { variableManager } from "../contexts/VariablesContext";
 
-export default function OTPForm() {
+export default function OTPForm({callBack}) {
   const [otp, setOtp] = useState(new Array(6).fill(""));
   const { setCode, } = useContext(variableManager);
 
@@ -34,6 +34,9 @@ export default function OTPForm() {
     ) {
       e.preventDefault();
       setOtp([...otp.map((data, i) => (i !== index ? data : ""))]);
+    }else if (e.key ==="Enter"){
+      callBack()
+
     }
   }
 

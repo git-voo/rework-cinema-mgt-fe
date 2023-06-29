@@ -6,7 +6,16 @@ import { variableManager } from "../contexts/VariablesContext";
 
 export default function MainNavBar() {
   const navigate = useNavigate()
-  const {user} = useContext(variableManager)
+  const {user, setUser} = useContext(variableManager)
+
+  function handleLogout(){
+    const confirmLogout = window.confirm("You will be logged out of the system. Proceed?")
+    if(confirmLogout){
+      setUser("")
+      localStorage.removeItem("primeUser")
+    }
+  }
+
   return (
     <div className="banner-bg main-navigation-container">
       <div className="nav_header_homepage">
@@ -18,8 +27,8 @@ export default function MainNavBar() {
           {
             user?(
               <div className="links-section"> 
-              <button className="login" onClick={()=>navigate("/auth/login")} >Profile</button>
-              <button className="signup" onClick={()=>navigate("/auth/register")}>Logout</button>
+              <button className="login" onClick={()=>{} } >Profile</button>
+              <button className="signup" onClick={()=>handleLogout()}>Logout</button>
             </div>
             ):( 
               <div className="links-section"> 

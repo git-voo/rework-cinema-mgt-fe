@@ -5,7 +5,7 @@ export async function verifyEmail(payload) {
   let { data, error } = "";
   try {
     await axiosInstance.post("/auth/verify", payload).then((resp) => {
-      data = resp.data;
+      data = resp.data.data;
     });
   } catch (err) {
     error = err;

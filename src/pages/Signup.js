@@ -42,7 +42,7 @@ export default function Signup() {
     const { data, error } = await registerUser(payload);
     if (data) {
       setUser(data)
-      navigate("/auth/verify", {replace:true});
+      navigate(`/auth/verify?email=${data.email}`, {replace:true});
     }
     console.log(data ? data : error);
   }

@@ -22,12 +22,13 @@ import Index from "./pages/admins/Index";
 import MainNavBar from "./components/MainNavBar";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import PasswordReset from "./pages/PasswordReset";
+import PasswordReset from "./pages/auth/PasswordReset";
 import VariablesContext from "./contexts/VariablesContext";
 import AxiosConfiguration from "./services/AxiosConfiguration";
 import Interceptors from "./services/Interceptors";
 import UserDashboard from "./pages/UserDashboard";
 import Verification from "./pages/Verification";
+import CreatePassword from "./pages/auth/CreatePassword";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
         <Route path="/auth/login" element={<Login/>} />
 
         <Route path="/auth/password-reset" element={<PasswordReset/>} />
+        <Route path="/auth/new-password" element={<CreatePassword/>} />
 
         <Route path="/user/dashboard" element={<UserDashboard/>} /> 
         <Route path="/movie/:id" element={<MovieDetailsPage/>} />
