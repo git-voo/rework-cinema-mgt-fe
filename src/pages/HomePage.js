@@ -1,8 +1,7 @@
 import logo from "../assets/images/EVENTBUX.png";
 import cardImg1 from "../assets/images/cardImg1.jpg";
 import Navigation from "../components/Navigation";
-import { BsSearch } from "react-icons/bs";
-import CinemaCard from "../utils/CinemaCards";
+import { BsSearch } from "react-icons/bs"; 
 import "../styles/homepage/homepage.css";
 import Footer from "../components/Footer";
 import Carousel from "react-bootstrap/Carousel";
@@ -12,13 +11,13 @@ import axios from 'axios';
 import UsersInfoPage from "./UsersInfoPage";
 
 
+import MainNavBar from "../components/MainNavBar";
 
 const HomePage = () => {
 
   
   return (
     <div>
-       
     {/* <div className="banner-bg">
     <div className="nav_header_homepage">
         <nav className="main-nav">

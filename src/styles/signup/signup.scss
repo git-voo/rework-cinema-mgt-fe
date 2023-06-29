@@ -1,0 +1,180 @@
+.signup-container {
+  display: flex;
+  gap: 10px;
+  height: 100vh;
+
+   
+  .copyright{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+  }
+
+  .banner-section {
+    background-image: url(../../assets/images/couple.jpg);
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .welcome-section {
+      .welcome {
+        font-weight: 800;
+        font-size: 35px;
+      }
+    }
+
+    .button-section {
+      button {
+        padding: 10px 15px;
+        background-color: rgba(242, 235, 235, 0.3);
+        border: 0px;
+        outline: none;
+        border-radius: 7px;
+        color: white;
+        cursor: pointer;
+        transition: background 0.5s ease;
+        &:hover{
+            background-color: black;
+
+        }
+      }
+    }
+  }
+
+
+
+
+  .form-section {
+    width: 50%;
+   
+
+    .content{  
+        width: 70%;
+        margin: auto;
+        padding: 20px; 
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+        .icons-section{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0px;
+            .icon{
+                width: 40px;
+                height: 40px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+
+
+        .input-section{
+            margin: 20px 0px;
+            label{
+                font-weight: 600;
+                font-size: 12px;
+            }
+
+            input{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                border-radius: 7px;
+                border: 0.5px solid grey;
+            }
+        }
+
+        .button-section{
+            margin: 20px 0px;
+display: flex;
+justify-content: center;
+
+            button{ 
+                padding: 10px;
+                border: none;
+                outline: none;
+                color: white;
+                 border-radius: 7px;
+                 width: 100%;
+                 background-color: black;
+                 border: 1px solid black;
+                 transition: all 0.3s ease-in;
+
+                 &:hover{
+                    background-color: white;
+                    border: 2px solid black;
+                    color: black;
+                    font-weight: 600;
+                 }
+            }
+        }
+
+
+       
+    }
+  }
+}
+
+.note{
+    font-size: 12px;
+    color: grey;
+    margin: 5px 0px;
+}
+
+
+
+.forgot-password{ 
+    font-size: 12px; 
+    cursor: pointer;
+
+    &:hover{
+        color: rgb(110, 164, 230);
+    }
+}
+
+
+
+//LOGIN CONTAINER
+.login-container{
+    .banner-section{
+        background-image: url(../../assets/images/themovies.jpg);
+    }
+.logo-section{
+    margin-bottom: 40px;
+}
+}
+
+.for-mobile{
+  display: none;
+}
+
+@media(max-width:"480px"){
+  .for-mobile{
+    display: block;
+  }
+.signup-container{
+  .banner-section{
+    display: none;
+  }
+
+  .form-section{
+    width: 100%;
+    .content{
+      width: 100%;
+    }
+  }
+
+  
+}
+}

@@ -1,0 +1,13 @@
+.pointer{
+    cursor: pointer;
+    user-select: none;
+}
+.disabled{
+    cursor:not-allowed;
+    user-select: none;
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+}

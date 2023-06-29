@@ -1,4 +1,5 @@
-import "../styles/components/navigation.scss"
+
+
 import logo from "../assets/images/EVENTBUX.png";
 import { BsSearch } from "react-icons/bs";
 

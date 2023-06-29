@@ -1,6 +1,10 @@
 import axios from "axios";
+import { useContext } from "react";
+import { variableManager } from "../contexts/VariablesContext";
 
 export default function AxiosConfiguration() {
+  // const {operation} = useContext(variableManager)
+  // console.log(operation)
   const instance = axios.create({
     baseURL: process.env.REACT_APP_BASE_URL,
     headers: {
